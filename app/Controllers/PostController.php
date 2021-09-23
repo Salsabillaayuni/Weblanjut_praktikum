@@ -8,7 +8,7 @@ class PostController extends BaseController
 {
 	public function index()
 	{
-		$data = [
+		$data=[
 			'title' => "Blog - Posts",
 		];
 		echo view('layouts/header', $data);
@@ -17,3 +17,4 @@ class PostController extends BaseController
 		echo view('layouts/footer');
 	}
 }
+
