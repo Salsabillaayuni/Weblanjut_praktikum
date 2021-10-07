@@ -1,6 +1,9 @@
-<?= $this->extend('template');?>
-<?= $this->section('content');?>
+<?= $this->extend('layouts/template'); ?>
 
+<?= $this->section('content'); ?>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+  
 <div class="wrapper">
 
   <!-- Preloader -->
@@ -840,6 +843,7 @@
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
+    
 
     </section>
     <!-- /.content -->
@@ -860,4 +864,5 @@
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
-<?= $this->endSection();?>
+
+<?= $this->endSection() ?>

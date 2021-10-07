@@ -8,10 +8,14 @@ class Templating extends BaseController
 {
 	public function index()
 	{
-		$data=[
+		$data = [
 			'title' => "Blog - Posts",
 		];
-		return view('view_admin');
+		//echo view('layouts/header', $data);
+		//echo view('layouts/navbar');
+		//echo view('v_posts');
+		//echo view('layouts/footer');
+
+        return view('view_admin');
 	}
 }
-
