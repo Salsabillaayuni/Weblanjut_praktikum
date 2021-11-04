@@ -1,9 +1,6 @@
-<?= $this->extend('layouts/template'); ?>
-
-<?= $this->section('content'); ?>
-
+<?= $this->extend('template');?>
+<?= $this->section('content');?>
 <body class="hold-transition sidebar-mini layout-fixed">
-  
 <div class="wrapper">
 
   <!-- Preloader -->
@@ -165,10 +162,21 @@
           <img src="/assets/adminlte/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block">Salsabilla Qurrota A'yuni</a>
         </div>
       </div>
 
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
@@ -176,21 +184,24 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item menu-open">
-            <a href="/admin" class="nav-link">
+            <a href="/admin" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
+                <i class="right fas fa-angle-left"></i>
               </p>
             </a>
           </li>
-          <li class="nav-item menu-open">
+
+            <li class="nav-item">
             <a href="/admin/posts" class="nav-link">
               <i class="nav-icon fas fa-book-open"></i>
               <p>
-                My Posts
+              My Posts
               </p>
             </a>
           </li>
+          
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -217,7 +228,6 @@
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
-    
 
     </section>
     <!-- /.content -->
@@ -238,5 +248,4 @@
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
-
-<?= $this->endSection() ?>
+<?= $this->endSection();?>
